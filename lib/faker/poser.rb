@@ -1,7 +1,7 @@
 require 'httparty'
 require 'json'
 module Faker
-  # Based on Perl's Text::Lorem
+  # Thanks to Hipster Ipsum
   class Poser < Lorem
     def self.words(num = 3, type = "hipster-centric")
       hipster = HTTParty.get("http://hipsterjesus.com/api/?html=false&type=#{type}")
